@@ -5,9 +5,11 @@
       "sku": "Enterprise"
     },
     "connectionRef": {
+      "apiTier": "Standard",
       "displayName": "SharePoint",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1431/1.0.1431.2301/sharepointonline/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {}
     },
     "datasets": {
       "https://matthewdevaney.sharepoint.com/sites/MatthewDevaneyBlog": {

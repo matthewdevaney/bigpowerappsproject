@@ -109,6 +109,17 @@
     "OverridableProperties": {},
     "Version": "2.2.0"
   },
+  "toggleSwitch": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/toggleSwitch",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "toggleSwitch",
+    "OverridableProperties": {},
+    "Version": "2.0.0"
+  },
   "typedDataCard": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
