@@ -1,0 +1,78 @@
+cmp_SideNav As CanvasComponent:
+    Items: |-
+        =Table(
+            {Value: "Item 1", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
+            {Value: "Item 2", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
+            {Value: "Item 3", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
+            {Value: "Item 4", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
+            {Value: "Item 5", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
+            {Value: "Item 6", Icon: Icon.Waypoint, Screen: App.ActiveScreen}
+        )
+    Color: =White
+    HoverFill: =RGBA(255,255,255,10%)
+    SelectedFill: =RGBA(255,255,255,10%)
+    CurrentIndicatorColor: =ColorFade(RGBA(29,161,242,1),70%)
+    ZIndex: =1
+    Y: =0
+    X: =0
+    Width: =80
+    Height: =700
+    Fill: =RGBA(51,52,74,1)
+
+    gal_SideNav As gallery.galleryVertical:
+        Items: =cmp_SideNav.Items
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        Layout: =Layout.Vertical
+        ZIndex: =1
+        Height: =Parent.Height
+        Width: =80
+        TemplateSize: =Parent.Height/8.5
+
+        ico_SideNav_Icon As icon.Cancel:
+            Width: =40
+            Y: =10
+            X: =(Parent.TemplateWidth-Self.Width)/2
+            ZIndex: =1
+            Color: =cmp_SideNav.Color
+            Icon: =ThisItem.Icon
+            Height: =40
+            OnSelect: =Select(Parent)
+
+        lbl_SideNav_Value As label:
+            Text: =ThisItem.Value
+            Size: =10
+            ZIndex: =2
+            Height: =20
+            Width: =Parent.TemplateWidth
+            Y: =55
+            Align: =Center
+            Font: =Font.'Segoe UI'
+            Color: =cmp_SideNav.Color
+            OnSelect: =Select(Parent)
+
+        lbl_SideNav_Current As label:
+            Text: =""
+            Y: =0.3529411764705941
+            Fill: =If(ThisItem.IsSelected, cmp_SideNav.CurrentIndicatorColor, DarkGray)
+            Width: =5
+            Visible: =ThisItem.IsSelected
+            Height: =Parent.TemplateHeight
+            ZIndex: =3
+            OnSelect: =Select(Parent)
+
+        lbl_SideNav_Overlay As label:
+            Text: =""
+            ZIndex: =4
+            Height: =Parent.TemplateHeight
+            PaddingTop: =45
+            Color: =RGBA(255, 255, 255, 1)
+            X: =2
+            Align: =Center
+            Font: =Font.'Segoe UI'
+            HoverFill: =cmp_SideNav.HoverFill
+            Fill: =If(ThisItem.IsSelected, Self.HoverFill,Transparent) 
+            Size: =10
+            Width: =Parent.TemplateWidth
+            OnSelect: =Select(Parent)
+

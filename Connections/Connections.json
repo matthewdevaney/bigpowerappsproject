@@ -1,0 +1,36 @@
+{
+  "f7bd7584-0616-4596-b2b0-34aaf0fb5887": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/b2a86ef43ec34d47b0324c1a0bd30b6d",
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1431/1.0.1431.2301/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://matthewdevaney.sharepoint.com/sites/MatthewDevaneyBlog": {
+        "dataSources": {
+          "Branch Locations": {
+            "tableName": "4fa53209-2d7b-4f7d-8e00-62f77138a622"
+          },
+          "Company Vehicles": {
+            "tableName": "82ac524e-7405-4be7-8fc5-a3febcfda0f3"
+          },
+          "Vehicle Reservations": {
+            "tableName": "2376074b-68be-490c-882c-0bf2f6d3da77"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Vehicle Reservations",
+      "Company Vehicles",
+      "Branch Locations"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "f7bd7584-0616-4596-b2b0-34aaf0fb5887"
+  }
+}

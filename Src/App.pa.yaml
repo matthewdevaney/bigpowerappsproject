@@ -1,0 +1,23 @@
+App As appinfo:
+    OnStart: |-
+        =ClearCollect(
+            colSidebarItems,
+            Table(
+                {
+                    Value: "Vehicles",
+                    Icon: Icon.Cars,
+                    Screen: 'Vehicles Screen'
+                },
+                {
+                    Value: "Item 2",
+                    Icon: Icon.Document,
+                    Screen: App.ActiveScreen
+                },
+                {
+                    Value: "Item 3",
+                    Icon: Icon.Settings,
+                    Screen: App.ActiveScreen
+                }
+            )
+        )
+

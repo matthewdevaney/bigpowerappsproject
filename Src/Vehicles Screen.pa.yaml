@@ -1,0 +1,103 @@
+"'Vehicles Screen' As screen":
+    Fill: =RGBA(237, 237, 237, 1)
+
+    cmp_Vehicles_SideNav As cmp_SideNav:
+        Items: =colSidebarItems
+        Y: =60
+        Height: =708
+
+    lbl_Vehicles_Title As label:
+        Text: =App.ActiveScreen.Name
+        Size: =20
+        ZIndex: =1
+        Height: =60
+        Width: =App.Width
+        Align: =Center
+        FontWeight: =Normal
+        Font: =Font.'Segoe UI'
+        Fill: =RGBA(39, 67, 125, 1)
+        Color: =RGBA(255, 255, 255, 1)
+
+    con_Vehicles_Main As groupContainer:
+        ZIndex: =4
+        LayoutOverflowY: =LayoutOverflow.Hide
+        LayoutOverflowX: =LayoutOverflow.Hide
+        LayoutJustifyContent: =LayoutJustifyContent.Start
+        LayoutAlignItems: =LayoutAlignItems.Start
+        LayoutDirection: =LayoutDirection.Horizontal
+        LayoutMode: =LayoutMode.Manual
+        DisplayMode: =DisplayMode.Edit
+        Height: =708
+        Width: =1286
+        Y: =60
+        X: =80
+        Fill: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.Solid
+        BorderColor: =RGBA(0, 0, 0, 1)
+
+        gal_Vehicles_List As gallery.galleryVertical:
+            Items: ='Company Vehicles'
+            Fill: =RGBA(255, 255, 255, 1)
+            TemplateSize: =63
+            ZIndex: =1
+            Layout: =Layout.Vertical
+            Height: =623
+            Width: =1211
+            Y: =85
+            X: =40
+
+            lbl_Vehicles_List__Office As label:
+                Text: =ThisItem.Office
+                Size: =16
+                ZIndex: =1
+                Height: =58
+                Width: =297
+                X: =531
+                Font: =Font.'Segoe UI'
+                OnSelect: =Select(Parent)
+
+            lbl_Vehicles_List__AssetID As label:
+                Text: =ThisItem.AssetCode
+                Font: =Font.'Segoe UI'
+                X: =343
+                Width: =188
+                Height: =58
+                ZIndex: =2
+                Size: =16
+                OnSelect: =Select(Parent)
+
+            lbl_Vehicles_List__YMM As label:
+                Text: =ThisItem.YearMakeModel
+                Font: =Font.'Segoe UI'
+                X: =44
+                Width: =268
+                Height: =58
+                ZIndex: =3
+                Size: =16
+                OnSelect: =Select(Parent)
+
+            ico_Vehicles_List__Edit As icon.ChevronRight:
+                Width: =32
+                Y: =13
+                X: =742
+                Height: =32
+                Color: =RGBA(0, 134, 208, 1)
+                Icon: =Icon.Edit
+                ZIndex: =4
+                OnSelect: |-
+                    =Set(gblRecordVehicle, LookUp('Company Vehicles', ID=ThisItem.ID));
+                    EditForm(frm_EditVehicles_Form);
+                    Navigate('Edit Vehicles Screen');
+
+        lbl_Vehicles_GalleryHeader As label:
+            Text: ="        Year Make & Model                   Asset ID                   Office"
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            X: =40
+            Y: =16
+            Width: =1211
+            Height: =58
+            ZIndex: =2
+            Size: =16
+            OnSelect: =
+
