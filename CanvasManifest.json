@@ -43,7 +43,7 @@
     "EnableInstrumentation": false,
     "ErrorCount": 0,
     "FileID": "fff470c1-4533-427e-aaa1-2970b579b6ab",
-    "Id": "d355642e-0515-49d3-b937-5c17fb764e1b",
+    "Id": "56192a35-3125-4a32-adfc-a3d960acf832",
     "InstrumentationKey": "",
     "Name": "Big+Power+Apps+Project+Player+2.msapp",
     "OriginatingVersion": "1.300"
@@ -62,7 +62,6 @@
   "ScreenOrder": [
     "Vehicles Screen",
     "Edit Vehicles Screen",
-    "Contracts Screen",
-    "Settings Screen"
+    "Contracts Screen"
   ]
 }
