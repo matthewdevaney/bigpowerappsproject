@@ -9,9 +9,9 @@ App As appinfo:
                     Screen: 'Vehicles Screen'
                 },
                 {
-                    Value: "Item 2",
+                    Value: "Contracts",
                     Icon: Icon.Document,
-                    Screen: App.ActiveScreen
+                    Screen: 'Contracts Screen'
                 },
                 {
                     Value: "Item 3",

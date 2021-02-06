@@ -1,11 +1,11 @@
 {
   "ComponentAllowCustomization": true,
-  "ComponentChangedSinceFileImport": false,
+  "ComponentChangedSinceFileImport": true,
   "ComponentManifest": {
     "AllowCustomization": true,
     "Description": "",
     "Name": "cmp_SideNav",
-    "TemplateGuid": "ee0960e781e3400d94e1b6a234901a5e"
+    "TemplateGuid": "8f57f6dcb20d41bbaefc270d8292cc03"
   },
   "ComponentType": "CanvasComponent",
   "CustomGroupControlTemplateName": "",
@@ -54,6 +54,15 @@
       "PropertyDataTypeKey": "Color",
       "Tooltip": "A custom property",
       "Type": "{\"Version\":\"1.300\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Default",
+      "Hidden": false,
+      "Name": "Default",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.300\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -61,9 +70,9 @@
   "IsComponentLocked": false,
   "IsComponentTemplate": true,
   "IsCustomGroupControlTemplate": false,
-  "LastModifiedTimestamp": "637481620021905878",
-  "Name": "ee0960e781e3400d94e1b6a234901a5e",
+  "LastModifiedTimestamp": "637481705376353687",
+  "Name": "8f57f6dcb20d41bbaefc270d8292cc03",
   "OverridableProperties": {},
-  "TemplateOriginalName": "24d6533bf66141dbbbe0bf7f5c16c023",
-  "Version": "637481634710678054"
+  "TemplateOriginalName": "ee0960e781e3400d94e1b6a234901a5e",
+  "Version": "637481707447788487"
 }

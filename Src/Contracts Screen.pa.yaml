@@ -1,0 +1,82 @@
+"'Contracts Screen' As screen":
+    Fill: =RGBA(237, 237, 237, 1)
+
+    cmp_Contracts_SideNav As cmp_SideNav:
+        Items: =colSidebarItems
+        Default: ="Contracts"
+        Y: =60
+        Height: =708
+
+    lbl_Contracts_Title As label:
+        Text: ="Contracts Screen"
+        Size: =20
+        ZIndex: =1
+        Height: =60
+        Width: =App.Width
+        Align: =Center
+        FontWeight: =Normal
+        Font: =Font.'Segoe UI'
+        Fill: =RGBA(39, 67, 125, 1)
+        Color: =RGBA(255, 255, 255, 1)
+
+    con_Contracts_Main As groupContainer:
+        ZIndex: =4
+        LayoutOverflowY: =LayoutOverflow.Hide
+        LayoutOverflowX: =LayoutOverflow.Hide
+        LayoutJustifyContent: =LayoutJustifyContent.Start
+        LayoutAlignItems: =LayoutAlignItems.Start
+        LayoutDirection: =LayoutDirection.Horizontal
+        LayoutMode: =LayoutMode.Manual
+        DisplayMode: =DisplayMode.Edit
+        Height: =708
+        Width: =1286
+        Y: =60
+        X: =80
+        Fill: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.Solid
+        BorderColor: =RGBA(0, 0, 0, 1)
+
+        gal_Contracts_Cards As gallery.galleryVertical:
+            Items: |-
+                =ForAll(Sequence(12), {Value: "Contract #"&Value})
+            WrapCount: =3
+            TemplateSize: =250
+            Layout: =Layout.Vertical
+            Width: =1211
+            Y: =30
+            X: =40
+            ZIndex: =1
+            Height: =678
+
+            btn_Contracts_Card As button:
+                Text: ="Button"
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(255, 255, 255, 1)
+                X: =22
+                Y: =27
+                Width: =360
+                Height: =210
+                ZIndex: =1
+
+            ico_Contracts_Icon As icon.ChevronRight:
+                Width: =87
+                Y: =40
+                X: =158
+                Color: =RGBA(0, 134, 208, 1)
+                Icon: =Icon.DocumentPDF
+                ZIndex: =2
+                Height: =122
+                OnSelect: =
+
+            lbl_Contracts_Name As label:
+                Text: =ThisItem.Value
+                ZIndex: =3
+                Height: =75
+                Width: =360
+                Size: =20
+                Y: =162
+                X: =22
+                Align: =Center
+                Font: =Font.'Segoe UI'
+                OnSelect: =Select(Parent)
+

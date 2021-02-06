@@ -1,22 +1,23 @@
 "'Edit Vehicles Screen' As screen":
     Fill: =RGBA(237, 237, 237, 1)
 
-    cmp_Edit_SideNav As cmp_SideNav:
+    cmp_EditVehicles_SideNav As cmp_SideNav:
         Items: =colSidebarItems
+        Default: ="Vehicles"
         Y: =60
         Height: =708
 
-    lbl_Edit_Title As label:
+    lbl_EditVehicles_Title As label:
         Text: =App.ActiveScreen.Name
-        Size: =20
-        ZIndex: =1
-        Height: =60
-        Width: =App.Width
         Align: =Center
-        FontWeight: =Normal
         Font: =Font.'Segoe UI'
-        Fill: =RGBA(39, 67, 125, 1)
         Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(39, 67, 125, 1)
+        Size: =20
+        FontWeight: =Normal
+        Width: =App.Width
+        Height: =60
+        ZIndex: =1
 
     ico_EditVehicles_Back As icon.Draw:
         Width: =36

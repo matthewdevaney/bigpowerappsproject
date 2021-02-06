@@ -43,13 +43,13 @@
     "EnableInstrumentation": false,
     "ErrorCount": 0,
     "FileID": "fff470c1-4533-427e-aaa1-2970b579b6ab",
-    "Id": "25cc7031-473e-473b-af1f-a44522542db6",
+    "Id": "0819a5f6-4185-4401-a07d-7c1d02625bfd",
     "InstrumentationKey": "",
-    "Name": "Big+Power+Apps+Project.msapp",
+    "Name": "Big+Power+Apps+Project+Player+2.msapp",
     "OriginatingVersion": "1.300"
   },
   "PublishInfo": {
-    "AppName": "Big Power Apps Project",
+    "AppName": "Big Power Apps Project Player 2",
     "BackgroundColor": "rgba(0, 176, 240, 1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",
@@ -61,6 +61,7 @@
   },
   "ScreenOrder": [
     "Vehicles Screen",
-    "Edit Vehicles Screen"
+    "Edit Vehicles Screen",
+    "Contracts Screen"
   ]
 }

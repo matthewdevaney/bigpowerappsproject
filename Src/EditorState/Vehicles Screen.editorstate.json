@@ -67,6 +67,14 @@
         "InvariantPropertyName": "CurrentIndicatorColor",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "\"Text\"",
+        "InvariantPropertyName": "Default",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
       }
     ],
     "HasDynamicProperties": false,
@@ -113,6 +121,16 @@
         "RuleProviderType": "Unknown"
       },
       {
+        "Category": "Data",
+        "PropertyName": "Default",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "ZIndex",
+        "RuleProviderType": "Unknown"
+      },
+      {
         "Category": "Design",
         "PropertyName": "Y",
         "RuleProviderType": "Unknown"
@@ -135,11 +153,6 @@
       {
         "Category": "Design",
         "PropertyName": "Fill",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "PropertyName": "ZIndex",
         "RuleProviderType": "Unknown"
       }
     ],

@@ -3,6 +3,7 @@
 
     cmp_Vehicles_SideNav As cmp_SideNav:
         Items: =colSidebarItems
+        Default: ="Vehicles"
         Y: =60
         Height: =708
 
